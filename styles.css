@@ -1,1 +1,53 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
 
+a {
+  text-decoration: none;
+}
+.aboutme-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--text-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+/* General hover styling for all icons */
+.aboutme-icons a:hover {
+    color: var(--activelink-color);
+    transform: scale(1.2) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--text-color);
+}
+
+/* Additional styling per icon */
+.aboutme-icons a.github:hover {
+    color: #ffffff;
+    background-color: #333;
+    box-shadow: 0 0 25px #333;
+}
+
+.aboutme-icons a.linkedin:hover {
+    color: #ffffff;
+    background-color: #0a66c2;
+    box-shadow: 0 0 25px #0a66c2;
+}
+
+.aboutme-icons a.email:hover {
+    color: #ffffff;
+    background-color: #ea4335; 
+    transform: scale(1.2) translateY(-5px);
+    box-shadow: 0 0 25px #ea4335;
+}
